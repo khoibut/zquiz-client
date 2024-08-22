@@ -11,7 +11,7 @@ function Login() {
             return;
         }
         setError("");
-        axios.post("http://localhost:5174/auth/login", {
+        axios.post("https://extramixture-api.vercel.app/auth/login", {
             email: email,
             password: password
         }).then((response) => {

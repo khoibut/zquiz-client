@@ -35,7 +35,7 @@ function EditQuestions() {
             setEditModalState(false)
         } else {
             if(modalMode.mode === "add"){
-                const url = 'http://localhost:5174/addquestion/' + new URLSearchParams(window.location.search).get('id')
+                const url = 'https://extramixture-api.vercel.app/addquestion/' + new URLSearchParams(window.location.search).get('id')
                 const question = document.querySelector(`.${styles.mid_container} textarea`).value
                 const data = {
                     question: question,
@@ -60,7 +60,7 @@ function EditQuestions() {
                     console.log(err)
                 })
             }else{
-                const url = 'http://localhost:5174/editquestion/' + new URLSearchParams(window.location.search).get('id')
+                const url = 'https://extramixture-api.vercel.app/editquestion/' + new URLSearchParams(window.location.search).get('id')
                 const question = document.querySelector(`.${styles.mid_container} textarea`).value
                 const data = {
                     index: modalMode.index,
@@ -109,7 +109,7 @@ function EditQuestions() {
     }
     function deleteQuestions(index){
         console.log(index)
-        const url='http://localhost:5174/deletequestion/' + new URLSearchParams(window.location.search).get('id')
+        const url='https://extramixture-api.vercel.app/deletequestion/' + new URLSearchParams(window.location.search).get('id')
         axios.post(url, {index: index}).then((res)=>{
             const temp = [...questions]
             temp.splice(index, 1)
@@ -131,7 +131,7 @@ function EditQuestions() {
         setEditModalState(true)
     }
     useEffect(() => {
-        const url = "http://localhost:5174/getquestions/" + new URLSearchParams(window.location.search).get("id")
+        const url = "https://extramixture-api.vercel.app/getquestions/" + new URLSearchParams(window.location.search).get("id")
         axios.get(url).then((response) => {
             setQuestions(response.data)
             if (response.data.length >= 2) {

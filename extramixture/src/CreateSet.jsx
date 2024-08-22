@@ -4,7 +4,7 @@ function CreateSet() {
     function sendAddSetRequest() {
         const setName = document.querySelector("input[type=text]").value;
         console.log(setName);
-        axios.post("http://localhost:5174/addset",{
+        axios.post("https://extramixture-api.vercel.app/addset",{
             name:setName,
             questions:[],
             author:localStorage.getItem("token"),

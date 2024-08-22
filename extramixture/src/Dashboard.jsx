@@ -14,7 +14,7 @@ import { useEffect } from 'react'
 function Dashboard() {
     const [setList, updateSetList] = useState([])
     useEffect(() => {
-        const url="http://localhost:5174/getset/"+localStorage.getItem("token")
+        const url="https://extramixture-api.vercel.app/getset/"+localStorage.getItem("token")
         axios.get(url).then((response) => {
             updateSetList(response.data)
         })

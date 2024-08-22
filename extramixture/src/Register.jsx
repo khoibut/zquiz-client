@@ -71,7 +71,7 @@ function Register() {
             return;
         }
         setPasswordError("")
-        axios.post("http://localhost:5174/auth/register", {
+        axios.post("https://extramixture-api.vercel.app/auth/register", {
             username: username,
             email: email,
             password: password

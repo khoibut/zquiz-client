@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function Account() {
     const[Username, setUsername] = useState("");
     useEffect(() => {
-        axios.post("http://localhost:5174/auth", {
+        axios.post("https://extramixture-api.vercel.app/auth", {
             token: localStorage.getItem("token")
         }).then((response) => {
             if(response.data.error){

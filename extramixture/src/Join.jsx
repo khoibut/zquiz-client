@@ -11,7 +11,7 @@ function Join() {
             alert("Please fill all the fields");
             return;
         }
-        axios.get("http://localhost:5174/checkgameexist/"+gameId).then((response) => {
+        axios.get("https://extramixture-api.vercel.app/checkgameexist/"+gameId).then((response) => {
             if(response.data.data == false) {
                 alert("Game does not exist");
             }else if(response.data.data == true) {

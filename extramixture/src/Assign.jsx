@@ -13,7 +13,7 @@ function Assign() {
         deadline.setDate(deadline.getDate() + parseInt(days));
         deadline.setHours(deadline.getHours() + parseInt(hours));
         deadline.setMinutes(deadline.getMinutes() + parseInt(minutes));
-        const url='http://localhost:5174/newassignment';
+        const url='https://extramixture-api.vercel.app/newassignment';
         axios.post(url, {
             author: localStorage.getItem("token"),
             set: new URLSearchParams(window.location.search).get("id"),

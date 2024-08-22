@@ -14,7 +14,7 @@ function ViewQuestion() {
         }
     }
     useEffect(() => {
-        const url = "http://localhost:5174/getquestions/" + new URLSearchParams(window.location.search).get("id")
+        const url = "https://extramixture-api.vercel.app/getquestions/" + new URLSearchParams(window.location.search).get("id")
         axios.get(url).then((response) => {
             setQuestions(response.data)
             if (response.data.length > 2) {

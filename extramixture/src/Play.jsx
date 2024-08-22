@@ -30,7 +30,7 @@ function Question() {
         }, 1000);
     }
     React.useEffect(() => {
-        const url = "http://localhost:5174/getassignment/" + new URLSearchParams(window.location.search).get("id")
+        const url = "https://extramixture-api.vercel.app/getassignment/" + new URLSearchParams(window.location.search).get("id")
         axios.get(url).then((response) => {
             setQuestionsList(response.data[0].questions)
             setQuestionNumber(Math.floor(Math.random() * response.data[0].questions.length))
