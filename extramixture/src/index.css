@@ -1,0 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+@import url(https://db.onlinewebfonts.com/c/0801c08e5412f54e4b4e9ad146d83a12?family=Ink+Free);
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+button:hover{
+  cursor: pointer;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+:root {
+  --main: #ff9696;
+  --light: #f4c5c5;
+--secondary: #A6C0DF;
+}
+a{
+  text-decoration: none;
+  font-weight: normal;
+  color: black;
+}
+.header {
+  font-family: 'Ink Free';
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  background-color: var(--main);
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+  border: solid black 1px;
+}
+
+.profile {
+  display: flex;
+  gap: 1rem;
+  padding-right: 2rem;
+}
+.profile a{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left:1rem;
+  padding-right: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: #f4c5c5;
+  font-size: 2rem;
+  font-family: "Ink Free";
+}
+.title {
+  z-index: 100;
+  padding-left: 2rem;
+  font-size: 3rem;
+  font-family: 'Ink Free';
+  font-weight: 400;
+  filter: drop-shadow(black 0px 0px 1px);
+}
+
+.sidebar {
+  box-sizing: border-box;
+  border: 1px solid black;
+  z-index: 10;
+  position: fixed;
+  padding-top: 4.25rem;
+  padding-bottom: 0.25rem;
+  background-color: var(--light);
+  height: 100%;
+  width: 15rem;
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar a:nth-child(odd) {
+  background-color: var(--main);
+}
+.sidebar a {
+  display:flex;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ink Free';
+  border-radius: 15px;
+  font-size: 2rem;
+  background-color: #f4c5c5;
+  border: solid 1px black;
+}
+
+.sidebar a:first-child {
+  height: 4rem;
+  font-size: 3rem;
+}
+
+.sidebar div {
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+}

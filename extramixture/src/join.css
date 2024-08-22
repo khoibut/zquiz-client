@@ -1,0 +1,49 @@
+body{
+    background-image: url("images/playbackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 1rem;
+}
+.title{
+    font-family: "Ink Free";
+    text-shadow: -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;;
+    font-size: 5rem;
+    color: white;
+}
+input{
+    outline: none;
+    border:white solid 4px;
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: white;
+    font-family: "Inconsolata";
+    background-color: #b424eea6;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+button{
+    outline: none;
+    border:rgb(0, 0, 0) solid 4px;
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-family: "Inconsolata";
+    background-color: #610f82fd;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

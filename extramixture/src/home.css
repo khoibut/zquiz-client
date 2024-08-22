@@ -1,0 +1,255 @@
+@import url(https://db.onlinewebfonts.com/c/0801c08e5412f54e4b4e9ad146d83a12?family=Ink+Free);
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+:root {
+    --main: #ff9696;
+    --light: #f4c5c5;
+
+}
+
+.header {
+    font-family: 'Ink Free';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    background-color: var(--main);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    border: solid black 1px;
+
+}
+
+
+.title {
+    padding-left: 2rem;
+    font-size: 3rem;
+    font-family: 'Ink Free';
+    font-weight: 400;
+    filter: drop-shadow(black 0px 0px 1px);
+}
+
+.sidebar {
+    box-sizing: border-box;
+    border: 1px solid black;
+    z-index: 1;
+    position: fixed;
+    padding-top: 4.25rem;
+    padding-bottom: 0.25rem;
+    background-color: var(--light);
+    height: 100%;
+    width: 15rem;
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar button:nth-child(odd) {
+    background-color: var(--main);
+}
+
+.sidebar button {
+    font-family: 'Ink Free';
+    border-radius: 15px;
+    font-size: 2rem;
+    background-color: #f4c5c5;
+    border: solid 1px black;
+}
+
+.sidebar button:first-child {
+    height: 4rem;
+    font-size: 3rem;
+}
+
+.sidebar div {
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;
+}
+
+.main {
+    padding-left: 20rem;
+    padding-top: 5rem;
+    font-family: 'Inconsolata';
+}
+
+img {
+    border: none;
+}
+
+.control {
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#search {
+    width: 2rem;
+    height: auto;
+}
+
+.control img {
+    width: 80px;
+    height: 67px;
+}
+.search-bar {
+    margin-left: 2rem;
+    border: 2px solid black;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    background-color: var(--light);
+    border-radius: 20px;
+    padding-left: 2rem;
+    font-weight: bold;
+}
+
+.search-input {
+    font-family: 'Inconsolata';
+    font-weight: bold;
+    padding-left: 2rem;
+    font-size: 2rem;
+    height: 3rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--light);
+    border-radius: 1000px;
+}
+
+.search-input::placeholder {
+    color: black;
+}
+.content{
+    font-family: 'Inconsolata';
+    padding-top: 2rem;
+    display:flex;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+    width:100%;
+}
+.card{
+    margin-right: 5rem;
+    background-color: var(--main);
+    width:15rem;
+    height:21rem;
+    border-radius: 20px;
+    outline: 1.5px solid black;
+}
+.card-title{
+    background-color: var(--light);
+    height:9rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display:flex;
+    flex-direction:row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-radius: 20px;
+    outline: solid black 1px;
+}
+.card-title img{
+    width:30px;
+    height:30px;
+}
+.card-title img:hover{
+    cursor: pointer;
+}   
+.questions-count{
+    font-family: 'Inconsolata';
+    width:8rem;
+    justify-content: center;
+    outline: solid black 1px;
+    height:1.7rem;
+    display:flex;
+    align-items: center;
+    background-color: var(--main);
+    border-radius: 10000px;
+    color: white;
+}
+.description{
+    font-family: 'Inconsolata';
+    padding-top: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-weight: bold;
+    height:4rem;
+}
+.info{
+    line-height: 1.2;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.2rem;
+    line-height: 1.2rem;
+    color:white;
+    font-family: 'Inconsolata', monospace; 
+    font-weight: 400;
+    border-bottom: 1px solid black;
+}
+.last-edited{
+    font-weight: lighter;
+    font-size: 0.7rem;
+}
+.operate{
+    outline:1px black solid;
+    display: flex;
+    height:30px;
+    justify-content: center;
+}
+.operate button{
+    padding:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:33%;
+    background-color: var(--main);
+    border:none
+}
+.operate button img{
+    width:25px;
+    height:25px;
+
+}
+.operate button:nth-child(2){
+    border-left:1px solid black;
+    border-right:1px solid black;
+}
+.operate a{
+    width:100%;
+}
+.start{
+    display:flex;
+    height:2.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    justify-content: center;
+    align-items: center;
+}
+.start a{
+    width:50%;
+    background-color: var(--main);
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+    font-family: "Inconsolata";
+}
+.start button:first-child{
+    border-right: 1px solid black;
+}
+button:hover{
+    cursor: pointer;
+}
+img{
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
